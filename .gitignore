@@ -1,0 +1,322 @@
+# ============================================
+# Общие правила
+# ============================================
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ============================================
+# Backend (NestJS / Node.js)
+# ============================================
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Prisma
+todo.server/prisma/migrations/
+
+# Tests
+coverage/
+.nyc_output/
+*.pid
+*.seed
+*.pid.lock
+
+# Runtime
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# ============================================
+# Frontend (Angular)
+# ============================================
+
+# Angular cache
+.angular/
+.angular/cache/
+.sass-cache/
+
+# Build outputs
+todo.desktopclient/dist/
+todo.desktopclient/tmp/
+todo.desktopclient/out-tsc/
+todo.desktopclient/bazel-out/
+
+# Test
+todo.desktopclient/coverage/
+todo.desktopclient/connect.lock
+todo.desktopclient/testem.log
+todo.desktopclient/typings/
+
+# ============================================
+# Android (Android Studio)
+# ============================================
+
+# Android Studio / IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/gradle.xml
+.idea/misc.xml
+.idea/vcs.xml
+.idea/runConfigurations.xml
+.idea/deploymentTargetDropDown.xml
+.idea/render.experimental.xml
+
+# Gradle
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+.gradletasknamecache
+
+# Build outputs
+todo.mobileclient/build/
+todo.mobileclient/app/build/
+todo.mobileclient/.externalNativeBuild/
+todo.mobileclient/.cxx/
+todo.mobileclient/captures/
+todo.mobileclient/outputs/
+todo.mobileclient/release/
+
+# Local configuration
+todo.mobileclient/local.properties
+local.properties
+
+# Android NDK
+*.so
+*.a
+*.o
+
+# Android Profiling
+*.hprof
+
+# Android Studio Navigation editor temp files
+.navigation/
+
+# Android Studio captures folder
+captures/
+
+# Keystore files (ВАЖНО: не коммитить!)
+*.jks
+*.keystore
+*.key
+
+# Google Services (если используется)
+todo.mobileclient/google-services.json
+
+# Firebase
+todo.mobileclient/app/google-services.json
+
+# Proguard
+proguard/
+*.pro
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Bundle artifacts
+*.apk
+*.ap_
+*.aab
+
+# Android Bundle
+*.apks
+*.apk.idsig
+
+# Signing files
+*.keystore
+*.jks
+
+# ============================================
+# iOS (Xcode / Swift)
+# ============================================
+
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## User settings
+xcuserdata/
+
+## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
+*.xcscmblueprint
+*.xccheckout
+
+## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
+build/
+DerivedData/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+## Obj-C/Swift specific
+*.hmap
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+# Package.pins
+# Package.resolved
+# *.xcodeproj
+#
+# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
+# hence it is not needed unless you have added a package configuration file to your project
+# .swiftpm
+
+.build/
+
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+#
+# Pods/
+#
+# Add this line if you want to avoid checking in source code from the Xcode workspace
+# *.xcworkspace
+
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+
+Carthage/Build/
+
+# Accio dependency management
+Dependencies/
+.accio/
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo.
+# Instead, use fastlane to re-generate the screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Code Injection
+#
+# After new code Injection tools there's a generated folder /iOSInjectionProject
+# https://github.com/johnno1962/injectionforxcode
+
+iOSInjectionProject/
+
+# macOS
+.DS_Store
+
+# Xcode Patch
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
+
+# ============================================
+# IDE / Editors
+# ============================================
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
+
+# Eclipse
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# ============================================
+# Временные файлы
+# ============================================
+
+.temp/
+.tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
